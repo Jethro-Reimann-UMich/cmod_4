@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../cmod_4.gen/sources_1/ip/agc_ila_2/sim/agc_ila_2.vhd" \
+
+# Do not sort compile order
+nosort

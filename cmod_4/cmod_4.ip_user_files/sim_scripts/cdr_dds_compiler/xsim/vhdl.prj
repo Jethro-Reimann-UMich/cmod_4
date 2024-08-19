@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../cmod_4.gen/sources_1/ip/cdr_dds_compiler/sim/cdr_dds_compiler.vhd" \
+
+# Do not sort compile order
+nosort

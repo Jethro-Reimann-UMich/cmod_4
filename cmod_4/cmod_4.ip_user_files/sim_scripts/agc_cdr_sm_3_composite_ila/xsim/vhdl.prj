@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../../cmod_4.gen/sources_1/ip/agc_cdr_sm_3_composite_ila/sim/agc_cdr_sm_3_composite_ila.vhd" \
+
+# Do not sort compile order
+nosort

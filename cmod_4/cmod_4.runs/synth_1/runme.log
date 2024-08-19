@@ -1,0 +1,617 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 552.430 ; gain = 179.012
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Xilinx2023_workspace/vivado_workspace/cmod_4/ip_repo/decoded_data_mem_map_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.2/data/ip'.
+INFO: [Project 1-4468] Skipped adding '..\..\imports\Debug\cmod_4_app_proj.elf' file in synth run script
+Command: read_checkpoint -auto_incremental -incremental C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top design_1_wrapper -part xc7a35tcpg236-1 -global_retiming on
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3304
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1434.684 ; gain = 439.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:32]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:3671' bound to instance 'design_1_i' of component 'design_1' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:3692]
+INFO: [Synth 8-3491] module 'design_1_agc_cdr_sm_3_1_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_agc_cdr_sm_3_1_0_stub.vhdl:6' bound to instance 'agc_cdr_sm_3_1' of component 'design_1_agc_cdr_sm_3_1_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4513]
+INFO: [Synth 8-638] synthesizing module 'design_1_agc_cdr_sm_3_1_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_agc_cdr_sm_3_1_0_stub.vhdl:24]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_0_0_stub.vhdl:6' bound to instance 'axi_gpio_0' of component 'design_1_axi_gpio_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4528]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_0_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_0_1' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_0_1_stub.vhdl:6' bound to instance 'axi_gpio_1' of component 'design_1_axi_gpio_0_1' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4551]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_0_1' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_0_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_1_0_stub.vhdl:6' bound to instance 'axi_gpio_2' of component 'design_1_axi_gpio_1_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4574]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_1_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_1_1' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_1_1_stub.vhdl:6' bound to instance 'axi_gpio_3' of component 'design_1_axi_gpio_1_1' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4597]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_1_1' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_1_1_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_4_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_4_0_stub.vhdl:6' bound to instance 'axi_gpio_4' of component 'design_1_axi_gpio_4_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4620]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_4_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_4_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_5_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_5_0_stub.vhdl:6' bound to instance 'axi_gpio_5' of component 'design_1_axi_gpio_5_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4643]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_5_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_5_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_6_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_6_0_stub.vhdl:6' bound to instance 'axi_gpio_6' of component 'design_1_axi_gpio_6_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4666]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_6_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_6_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_7_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_7_0_stub.vhdl:6' bound to instance 'axi_gpio_7' of component 'design_1_axi_gpio_7_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4689]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_7_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_7_0_stub.vhdl:33]
+INFO: [Synth 8-3491] module 'design_1_axi_gpio_consts_0_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_consts_0_0_stub.vhdl:6' bound to instance 'axi_gpio_consts_0' of component 'design_1_axi_gpio_consts_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4713]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_gpio_consts_0_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_gpio_consts_0_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_uartlite_0_0_stub.vhdl:6' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4722]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_axi_uartlite_0_0_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_clk_wiz_1_stub.vhdl:6' bound to instance 'clk_wiz' of component 'design_1_clk_wiz_1' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4747]
+INFO: [Synth 8-638] synthesizing module 'design_1_clk_wiz_1' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_clk_wiz_1_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_decoded_data_mem_map_0_3' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_decoded_data_mem_map_0_3_stub.vhdl:6' bound to instance 'decoded_data_mem_map_0' of component 'design_1_decoded_data_mem_map_0_3' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4755]
+INFO: [Synth 8-638] synthesizing module 'design_1_decoded_data_mem_map_0_3' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_decoded_data_mem_map_0_3_stub.vhdl:34]
+INFO: [Synth 8-3491] module 'design_1_manchester_rs_compos_0_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_manchester_rs_compos_0_0_stub.vhdl:6' bound to instance 'manchester_rs_compos_0' of component 'design_1_manchester_rs_compos_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4780]
+INFO: [Synth 8-638] synthesizing module 'design_1_manchester_rs_compos_0_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_manchester_rs_compos_0_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_mdm_1_0_stub.vhdl:6' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4790]
+INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_mdm_1_0_stub.vhdl:42]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_microblaze_0_0_stub.vhdl:6' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4823]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_microblaze_0_0_stub.vhdl:64]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_axi_intc_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:6' bound to instance 'microblaze_0_axi_intc' of component 'design_1_microblaze_0_axi_intc_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:4909]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_intc_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_microblaze_0_axi_intc_0_stub.vhdl:37]
+INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_axi_periph_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:2164]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_8RVYHO' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_8RVYHO' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_1UTB3Y5' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:159]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_1UTB3Y5' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_7ANRHB' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:260]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_7ANRHB' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:260]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_1W07O72' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:361]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_1W07O72' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:361]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_5LX7BU' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:462]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_5LX7BU' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:462]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1XR4ZAZ' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:563]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1XR4ZAZ' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:563]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_4YOIXL' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:664]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_4YOIXL' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:664]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_1YO2N20' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:765]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_1YO2N20' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:765]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_2FYR80' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:866]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_2FYR80' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:866]
+INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_1S9IENL' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:971]
+INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_1S9IENL' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:971]
+INFO: [Synth 8-638] synthesizing module 'm10_couplers_imp_1JMMVIC' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1078]
+INFO: [Synth 8-256] done synthesizing module 'm10_couplers_imp_1JMMVIC' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1078]
+INFO: [Synth 8-638] synthesizing module 'm11_couplers_imp_AVFHLX' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1179]
+INFO: [Synth 8-256] done synthesizing module 'm11_couplers_imp_AVFHLX' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1179]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1RZP34U' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1842]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1RZP34U' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1842]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_xbar_0_stub.vhdl:6' bound to instance 'xbar' of component 'design_1_xbar_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:3432]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_xbar_0_stub.vhdl:52]
+INFO: [Synth 8-256] done synthesizing module 'design_1_microblaze_0_axi_periph_0' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:2164]
+INFO: [Synth 8-638] synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1263]
+INFO: [Synth 8-3491] module 'design_1_dlmb_bram_if_cntlr_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'dlmb_bram_if_cntlr' of component 'design_1_dlmb_bram_if_cntlr_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1477]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_bram_if_cntlr_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_dlmb_bram_if_cntlr_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_dlmb_v10_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_dlmb_v10_0_stub.vhdl:6' bound to instance 'dlmb_v10' of component 'design_1_dlmb_v10_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1531]
+INFO: [Synth 8-638] synthesizing module 'design_1_dlmb_v10_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_dlmb_v10_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_ilmb_bram_if_cntlr_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:6' bound to instance 'ilmb_bram_if_cntlr' of component 'design_1_ilmb_bram_if_cntlr_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1559]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_bram_if_cntlr_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_ilmb_bram_if_cntlr_0_stub.vhdl:32]
+INFO: [Synth 8-3491] module 'design_1_ilmb_v10_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_ilmb_v10_0_stub.vhdl:6' bound to instance 'ilmb_v10' of component 'design_1_ilmb_v10_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1613]
+INFO: [Synth 8-638] synthesizing module 'design_1_ilmb_v10_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_ilmb_v10_0_stub.vhdl:37]
+INFO: [Synth 8-3491] module 'design_1_lmb_bram_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_lmb_bram_0_stub.vhdl:6' bound to instance 'lmb_bram' of component 'design_1_lmb_bram_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1641]
+INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_lmb_bram_0_stub.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:1263]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_xlconcat_0' declared at 'c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:53' bound to instance 'microblaze_0_xlconcat' of component 'design_1_microblaze_0_xlconcat_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:5218]
+INFO: [Synth 8-6157] synthesizing module 'design_1_microblaze_0_xlconcat_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_5_xlconcat' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_5_xlconcat' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ipshared/147b/hdl/xlconcat_v2_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_microblaze_0_xlconcat_0' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_xlconcat_0/synth/design_1_microblaze_0_xlconcat_0.v:53]
+INFO: [Synth 8-3491] module 'design_1_msg_detected_led_1_0_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_msg_detected_led_1_0_0_stub.vhdl:6' bound to instance 'msg_detected_led_1_0' of component 'design_1_msg_detected_led_1_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:5224]
+INFO: [Synth 8-638] synthesizing module 'design_1_msg_detected_led_1_0_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_msg_detected_led_1_0_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'design_1_mux_select_1_0_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_mux_select_1_0_0_stub.vhdl:6' bound to instance 'mux_select_1_0' of component 'design_1_mux_select_1_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:5231]
+INFO: [Synth 8-638] synthesizing module 'design_1_mux_select_1_0_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_mux_select_1_0_0_stub.vhdl:17]
+INFO: [Synth 8-3491] module 'design_1_rs_decoder_init_rst_0_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_rs_decoder_init_rst_0_0_stub.vhdl:6' bound to instance 'rs_decoder_init_rst_0' of component 'design_1_rs_decoder_init_rst_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:5239]
+INFO: [Synth 8-638] synthesizing module 'design_1_rs_decoder_init_rst_0_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_rs_decoder_init_rst_0_0_stub.vhdl:14]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_156M_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_rst_clk_wiz_156M_0_stub.vhdl:6' bound to instance 'rst_clk_wiz_156M' of component 'design_1_rst_clk_wiz_156M_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:5244]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_156M_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_rst_clk_wiz_156M_0_stub.vhdl:22]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53' bound to instance 'xadc_addr_const' of component 'design_1_xlconstant_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:5257]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_8_xlconstant' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_8_xlconstant' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ipshared/d390/hdl/xlconstant_v1_1_vl_rfs.v:68]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:53]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53' bound to instance 'xadc_slice' of component 'design_1_xlslice_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:5261]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_3_xlslice' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ipshared/217a/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_3_xlslice' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ipshared/217a/hdl/xlslice_v1_0_vl_rfs.v:58]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:53]
+INFO: [Synth 8-3491] module 'design_1_xadc_wiz_0_0' declared at 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_xadc_wiz_0_0_stub.vhdl:6' bound to instance 'xadc_wiz_0' of component 'design_1_xadc_wiz_0_0' [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:5266]
+INFO: [Synth 8-638] synthesizing module 'design_1_xadc_wiz_0_0' [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/.Xil/Vivado-9328-DESKTOP-FT2RUUG/realtime/design_1_xadc_wiz_0_0_stub.vhdl:28]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/synth/design_1.vhd:3692]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:32]
+WARNING: [Synth 8-7129] Port Din[3] in module xlslice_v1_0_3_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[2] in module xlslice_v1_0_3_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[1] in module xlslice_v1_0_3_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port Din[0] in module xlslice_v1_0_3_xlslice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_5_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1564.895 ; gain = 569.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1564.895 ; gain = 569.934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1564.895 ; gain = 569.934
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1564.895 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0_in_context.xdc] for cell 'design_1_i/xadc_wiz_0'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1/design_1_clk_wiz_1/design_1_clk_wiz_1_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1/design_1_clk_wiz_1/design_1_clk_wiz_1_in_context.xdc] for cell 'design_1_i/clk_wiz'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_consts_0_0/design_1_axi_gpio_consts_0_0/design_1_axi_gpio_consts_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_consts_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_consts_0_0/design_1_axi_gpio_consts_0_0/design_1_axi_gpio_consts_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_consts_0'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_manchester_rs_compos_0_0/design_1_manchester_rs_compos_0_0/design_1_manchester_rs_compos_0_0_in_context.xdc] for cell 'design_1_i/manchester_rs_compos_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_manchester_rs_compos_0_0/design_1_manchester_rs_compos_0_0/design_1_manchester_rs_compos_0_0_in_context.xdc] for cell 'design_1_i/manchester_rs_compos_0'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_agc_cdr_sm_3_1_0/design_1_agc_cdr_sm_3_1_0/design_1_agc_cdr_sm_3_1_0_in_context.xdc] for cell 'design_1_i/agc_cdr_sm_3_1'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_agc_cdr_sm_3_1_0/design_1_agc_cdr_sm_3_1_0/design_1_agc_cdr_sm_3_1_0_in_context.xdc] for cell 'design_1_i/agc_cdr_sm_3_1'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_rs_decoder_init_rst_0_0/design_1_rs_decoder_init_rst_0_0/design_1_rs_decoder_init_rst_0_0_in_context.xdc] for cell 'design_1_i/rs_decoder_init_rst_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_rs_decoder_init_rst_0_0/design_1_rs_decoder_init_rst_0_0/design_1_rs_decoder_init_rst_0_0_in_context.xdc] for cell 'design_1_i/rs_decoder_init_rst_0'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_msg_detected_led_1_0_0/design_1_msg_detected_led_1_0_0/design_1_msg_detected_led_1_0_0_in_context.xdc] for cell 'design_1_i/msg_detected_led_1_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_msg_detected_led_1_0_0/design_1_msg_detected_led_1_0_0/design_1_msg_detected_led_1_0_0_in_context.xdc] for cell 'design_1_i/msg_detected_led_1_0'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0/design_1_microblaze_0_0_in_context.xdc] for cell 'design_1_i/microblaze_0'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_dlmb_v10_0/design_1_dlmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_v10'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_ilmb_v10_0/design_1_ilmb_v10_0/design_1_dlmb_v10_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_v10'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0/design_1_dlmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0/design_1_ilmb_bram_if_cntlr_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/design_1_lmb_bram_0/design_1_lmb_bram_0_in_context.xdc] for cell 'design_1_i/microblaze_0_local_memory/lmb_bram'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_periph/xbar'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0/design_1_microblaze_0_axi_intc_0_in_context.xdc] for cell 'design_1_i/microblaze_0_axi_intc'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0/design_1_mdm_1_0_in_context.xdc] for cell 'design_1_i/mdm_1'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_156M_0/design_1_rst_clk_wiz_156M_0/design_1_rst_clk_wiz_156M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_156M'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_156M_0/design_1_rst_clk_wiz_156M_0/design_1_rst_clk_wiz_156M_0_in_context.xdc] for cell 'design_1_i/rst_clk_wiz_156M'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_0'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_0_1/design_1_axi_gpio_0_1/design_1_axi_gpio_0_0_in_context.xdc] for cell 'design_1_i/axi_gpio_1'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_2'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0/design_1_axi_gpio_1_0_in_context.xdc] for cell 'design_1_i/axi_gpio_2'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/design_1_axi_gpio_1_1/design_1_axi_gpio_1_1_in_context.xdc] for cell 'design_1_i/axi_gpio_3'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_1_1/design_1_axi_gpio_1_1/design_1_axi_gpio_1_1_in_context.xdc] for cell 'design_1_i/axi_gpio_3'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0/design_1_axi_gpio_5_0_in_context.xdc] for cell 'design_1_i/axi_gpio_4'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_4_0/design_1_axi_gpio_4_0/design_1_axi_gpio_5_0_in_context.xdc] for cell 'design_1_i/axi_gpio_4'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0_in_context.xdc] for cell 'design_1_i/axi_gpio_5'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0/design_1_axi_gpio_5_0_in_context.xdc] for cell 'design_1_i/axi_gpio_5'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_6_0/design_1_axi_gpio_6_0/design_1_axi_gpio_6_0_in_context.xdc] for cell 'design_1_i/axi_gpio_6'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_6_0/design_1_axi_gpio_6_0/design_1_axi_gpio_6_0_in_context.xdc] for cell 'design_1_i/axi_gpio_6'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_decoded_data_mem_map_0_3/design_1_decoded_data_mem_map_0_3/design_1_decoded_data_mem_map_0_3_in_context.xdc] for cell 'design_1_i/decoded_data_mem_map_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_decoded_data_mem_map_0_3/design_1_decoded_data_mem_map_0_3/design_1_decoded_data_mem_map_0_3_in_context.xdc] for cell 'design_1_i/decoded_data_mem_map_0'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_7_0/design_1_axi_gpio_7_0/design_1_axi_gpio_7_0_in_context.xdc] for cell 'design_1_i/axi_gpio_7'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_gpio_7_0/design_1_axi_gpio_7_0/design_1_axi_gpio_7_0_in_context.xdc] for cell 'design_1_i/axi_gpio_7'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_in_context.xdc] for cell 'design_1_i/axi_uartlite_0'
+Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_mux_select_1_0_0/design_1_mux_select_1_0_0/design_1_mux_select_1_0_0_in_context.xdc] for cell 'design_1_i/mux_select_1_0'
+Finished Parsing XDC File [c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_mux_select_1_0_0/design_1_mux_select_1_0_0/design_1_mux_select_1_0_0_in_context.xdc] for cell 'design_1_i/mux_select_1_0'
+Parsing XDC File [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.srcs/constrs_1/new/cmod_a7_phys_const.xdc]
+Finished Parsing XDC File [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.srcs/constrs_1/new/cmod_a7_phys_const.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.srcs/constrs_1/new/cmod_a7_phys_const.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1576.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1576.672 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_0' at clock pin 's_axi_aclk' is different from the actual clock period '6.410', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_1' at clock pin 's_axi_aclk' is different from the actual clock period '6.410', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_2' at clock pin 's_axi_aclk' is different from the actual clock period '6.410', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_3' at clock pin 's_axi_aclk' is different from the actual clock period '6.410', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_4' at clock pin 's_axi_aclk' is different from the actual clock period '6.410', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_5' at clock pin 's_axi_aclk' is different from the actual clock period '6.410', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_6' at clock pin 's_axi_aclk' is different from the actual clock period '6.410', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '10.000' specified during out-of-context synthesis of instance 'design_1_i/axi_gpio_7' at clock pin 's_axi_aclk' is different from the actual clock period '6.410', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'design_1_i/microblaze_0_local_memory/lmb_bram' at clock pin 'clka' is different from the actual clock period '6.410', this can lead to different synthesis results.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1/design_1_clk_wiz_1/design_1_clk_wiz_1_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sys_clock. (constraint file  c:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1/design_1_clk_wiz_1/design_1_clk_wiz_1_in_context.xdc, line 5).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xadc_wiz_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xadc_addr_const. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xadc_slice. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_consts_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/manchester_rs_compos_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/agc_cdr_sm_3_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rs_decoder_init_rst_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/msg_detected_led_1_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_v10. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/ilmb_bram_if_cntlr. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/lmb_bram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_periph. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_axi_intc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_xlconcat. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_156M. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_1. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_2. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_3. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_4. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_5. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_6. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/decoded_data_mem_map_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_gpio_7. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mux_select_1_0. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5816] Retiming module `design_1_microblaze_0_axi_periph_0`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `design_1_microblaze_0_axi_periph_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `design_1_microblaze_0_xlconcat_0`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `design_1_microblaze_0_xlconcat_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `design_1_xlslice_0_0`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `design_1_xlslice_0_0' done
+
+
+INFO: [Synth 8-5816] Retiming module `design_1`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `design_1' done
+
+
+INFO: [Synth 8-5816] Retiming module `design_1_wrapper`
+	Numbers of forward move = 0, and backward move = 0
+
+
+INFO: [Synth 8-5816] Retiming module `design_1_wrapper' done
+
+
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_xbar_0                   |         1|
+|2     |design_1_agc_cdr_sm_3_1_0         |         1|
+|3     |design_1_axi_gpio_0_0             |         1|
+|4     |design_1_axi_gpio_0_1             |         1|
+|5     |design_1_axi_gpio_1_0             |         1|
+|6     |design_1_axi_gpio_1_1             |         1|
+|7     |design_1_axi_gpio_4_0             |         1|
+|8     |design_1_axi_gpio_5_0             |         1|
+|9     |design_1_axi_gpio_6_0             |         1|
+|10    |design_1_axi_gpio_7_0             |         1|
+|11    |design_1_axi_gpio_consts_0_0      |         1|
+|12    |design_1_axi_uartlite_0_0         |         1|
+|13    |design_1_clk_wiz_1                |         1|
+|14    |design_1_decoded_data_mem_map_0_3 |         1|
+|15    |design_1_manchester_rs_compos_0_0 |         1|
+|16    |design_1_mdm_1_0                  |         1|
+|17    |design_1_microblaze_0_0           |         1|
+|18    |design_1_microblaze_0_axi_intc_0  |         1|
+|19    |design_1_msg_detected_led_1_0_0   |         1|
+|20    |design_1_mux_select_1_0_0         |         1|
+|21    |design_1_rs_decoder_init_rst_0_0  |         1|
+|22    |design_1_rst_clk_wiz_156M_0       |         1|
+|23    |design_1_xadc_wiz_0_0             |         1|
+|24    |design_1_dlmb_bram_if_cntlr_0     |         1|
+|25    |design_1_dlmb_v10_0               |         1|
+|26    |design_1_ilmb_bram_if_cntlr_0     |         1|
+|27    |design_1_ilmb_v10_0               |         1|
+|28    |design_1_lmb_bram_0               |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------------+------+
+|      |Cell                                   |Count |
++------+---------------------------------------+------+
+|1     |design_1_agc_cdr_sm_3_1_0_bbox         |     1|
+|2     |design_1_axi_gpio_0_0_bbox             |     1|
+|3     |design_1_axi_gpio_0_1_bbox             |     1|
+|4     |design_1_axi_gpio_1_0_bbox             |     1|
+|5     |design_1_axi_gpio_1_1_bbox             |     1|
+|6     |design_1_axi_gpio_4_0_bbox             |     1|
+|7     |design_1_axi_gpio_5_0_bbox             |     1|
+|8     |design_1_axi_gpio_6_0_bbox             |     1|
+|9     |design_1_axi_gpio_7_0_bbox             |     1|
+|10    |design_1_axi_gpio_consts_0_0_bbox      |     1|
+|11    |design_1_axi_uartlite_0_0_bbox         |     1|
+|12    |design_1_clk_wiz_1_bbox                |     1|
+|13    |design_1_decoded_data_mem_map_0_3_bbox |     1|
+|14    |design_1_dlmb_bram_if_cntlr_0_bbox     |     1|
+|15    |design_1_dlmb_v10_0_bbox               |     1|
+|16    |design_1_ilmb_bram_if_cntlr_0_bbox     |     1|
+|17    |design_1_ilmb_v10_0_bbox               |     1|
+|18    |design_1_lmb_bram_0_bbox               |     1|
+|19    |design_1_manchester_rs_compos_0_0_bbox |     1|
+|20    |design_1_mdm_1_0_bbox                  |     1|
+|21    |design_1_microblaze_0_0_bbox           |     1|
+|22    |design_1_microblaze_0_axi_intc_0_bbox  |     1|
+|23    |design_1_msg_detected_led_1_0_0_bbox   |     1|
+|24    |design_1_mux_select_1_0_0_bbox         |     1|
+|25    |design_1_rs_decoder_init_rst_0_0_bbox  |     1|
+|26    |design_1_rst_clk_wiz_156M_0_bbox       |     1|
+|27    |design_1_xadc_wiz_0_0_bbox             |     1|
+|28    |design_1_xbar_0_bbox                   |     1|
+|29    |IBUF                                   |     6|
+|30    |OBUF                                   |     5|
++------+---------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:33 . Memory (MB): peak = 1576.672 ; gain = 581.711
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 31 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:31 . Memory (MB): peak = 1576.672 ; gain = 569.934
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1576.672 ; gain = 581.711
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 1576.672 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1576.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: efec2344
+INFO: [Common 17-83] Releasing license: Synthesis
+141 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1576.672 ; gain = 976.859
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1576.672 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Jul  5 17:10:51 2024...

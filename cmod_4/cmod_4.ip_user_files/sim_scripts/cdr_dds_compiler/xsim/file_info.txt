@@ -1,0 +1,2 @@
+cdr_dds_compiler.vhd,vhdl,xil_defaultlib,../../../../cmod_4.gen/sources_1/ip/cdr_dds_compiler/sim/cdr_dds_compiler.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

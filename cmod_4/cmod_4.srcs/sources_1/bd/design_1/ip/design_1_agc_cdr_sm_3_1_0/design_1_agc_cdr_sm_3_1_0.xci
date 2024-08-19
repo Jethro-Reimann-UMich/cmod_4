@@ -1,0 +1,70 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "design_1_agc_cdr_sm_3_1_0",
+    "cell_name": "agc_cdr_sm_3_1",
+    "component_reference": "xilinx.com:module_ref:agc_cdr_sm_3:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../cmod_4.gen/sources_1/bd/design_1/ip/design_1_agc_cdr_sm_3_1_0",
+    "parameters": {
+      "component_parameters": {
+        "ADC_SAMPLE_SIZE": [ { "value": "12", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "AGC_PEAK_TO_PEAK_REF": [ { "value": "1000", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "RS_N": [ { "value": "255", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "RS_K": [ { "value": "139", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "GENERATE_COMPOSITE_AGC_CDR_SM_3_ILA": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "GENERATE_CDR_SM_ILA": [ { "value": "false", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "GENERATE_AGC_ILA": [ { "value": "false", "value_src": "user", "resolve_type": "user", "format": "bool", "usage": "all" } ],
+        "Component_Name": [ { "value": "design_1_agc_cdr_sm_3_1_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "model_parameters": {
+        "ADC_SAMPLE_SIZE": [ { "value": "12", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "AGC_PEAK_TO_PEAK_REF": [ { "value": "1000", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "RS_N": [ { "value": "255", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "RS_K": [ { "value": "139", "resolve_type": "generated", "format": "long", "usage": "all" } ],
+        "GENERATE_COMPOSITE_AGC_CDR_SM_3_ILA": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
+        "GENERATE_CDR_SM_ILA": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ],
+        "GENERATE_AGC_ILA": [ { "value": "false", "resolve_type": "generated", "format": "bool", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "artix7" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:cmod_a7-35t:part0:1.2" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7a35t" } ],
+        "PACKAGE": [ { "value": "cpg236" } ],
+        "PREFHDL": [ { "value": "VHDL" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../cmod_4.gen/sources_1/bd/design_1/ip/design_1_agc_cdr_sm_3_1_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "hs_clk_i": [ { "direction": "in" } ],
+        "rst_i": [ { "direction": "in" } ],
+        "adc_data_i": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
+        "input_valid_i": [ { "direction": "in" } ],
+        "peak_detector_threshold_i": [ { "direction": "in", "size_left": "11", "size_right": "0" } ],
+        "recovered_clk_o": [ { "direction": "out" } ],
+        "recovered_data_bit_o": [ { "direction": "out" } ],
+        "kp_i": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "ki_i": [ { "direction": "in", "size_left": "31", "size_right": "0" } ],
+        "initial_phase_offset_i": [ { "direction": "in", "size_left": "15", "size_right": "0" } ],
+        "dds_phase_step_o": [ { "direction": "out", "size_left": "15", "size_right": "0" } ],
+        "moving_ave_o": [ { "direction": "out", "size_left": "11", "size_right": "0" } ]
+      }
+    }
+  }
+}

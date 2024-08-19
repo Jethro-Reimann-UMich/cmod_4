@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 2  -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot rs_decoder_sm_1_ila xil_defaultlib.rs_decoder_sm_1_ila xil_defaultlib.glbl -log elaborate.log

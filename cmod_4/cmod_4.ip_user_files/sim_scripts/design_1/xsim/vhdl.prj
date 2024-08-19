@@ -1,0 +1,29 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_consts_0_0/sim/design_1_axi_gpio_consts_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_manchester_rs_compos_0_0/sim/design_1_manchester_rs_compos_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_agc_cdr_sm_3_1_0/sim/design_1_agc_cdr_sm_3_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_rs_decoder_init_rst_0_0/sim/design_1_rs_decoder_init_rst_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_msg_detected_led_1_0_0/sim/design_1_msg_detected_led_1_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_microblaze_0_0/sim/design_1_microblaze_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_dlmb_v10_0/sim/design_1_dlmb_v10_0.vhd" \
+"../../../bd/design_1/ip/design_1_ilmb_v10_0/sim/design_1_ilmb_v10_0.vhd" \
+"../../../bd/design_1/ip/design_1_dlmb_bram_if_cntlr_0/sim/design_1_dlmb_bram_if_cntlr_0.vhd" \
+"../../../bd/design_1/ip/design_1_ilmb_bram_if_cntlr_0/sim/design_1_ilmb_bram_if_cntlr_0.vhd" \
+"../../../bd/design_1/ip/design_1_microblaze_0_axi_intc_0/sim/design_1_microblaze_0_axi_intc_0.vhd" \
+"../../../bd/design_1/ip/design_1_mdm_1_0/sim/design_1_mdm_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_clk_wiz_156M_0/sim/design_1_rst_clk_wiz_156M_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_0/sim/design_1_axi_gpio_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_0_1/sim/design_1_axi_gpio_0_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_1_0/sim/design_1_axi_gpio_1_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_1_1/sim/design_1_axi_gpio_1_1.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_4_0/sim/design_1_axi_gpio_4_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_5_0/sim/design_1_axi_gpio_5_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_gpio_6_0/sim/design_1_axi_gpio_6_0.vhd" \
+"../../../bd/design_1/ipshared/aad8/hdl/decoded_data_mem_map_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/aad8/hdl/decoded_data_mem_map_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_decoded_data_mem_map_0_3/sim/design_1_decoded_data_mem_map_0_3.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+
+# Do not sort compile order
+nosort

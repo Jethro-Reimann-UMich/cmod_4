@@ -1,0 +1,2 @@
+freq_err_mult_gen.vhd,vhdl,xil_defaultlib,../../../../cmod_4.gen/sources_1/ip/freq_err_mult_gen/sim/freq_err_mult_gen.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

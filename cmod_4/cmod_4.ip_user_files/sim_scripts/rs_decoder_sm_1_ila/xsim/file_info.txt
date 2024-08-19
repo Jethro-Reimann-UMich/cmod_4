@@ -1,0 +1,2 @@
+rs_decoder_sm_1_ila.vhd,vhdl,xil_defaultlib,../../../../cmod_4.gen/sources_1/ip/rs_decoder_sm_1_ila/sim/rs_decoder_sm_1_ila.vhd,incdir="../../../../cmod_4.gen/sources_1/ip/rs_decoder_sm_1_ila/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

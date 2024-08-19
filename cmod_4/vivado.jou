@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Tue Mar  5 17:44:41 2024
+# Process ID: 6544
+# Current directory: C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12200 C:\Xilinx2023_workspace\vivado_workspace\cmod_4\cmod_4\cmod_4.xpr
+# Log file: C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/vivado.log
+# Journal file: C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4\vivado.jou
+# Running On: DESKTOP-FT2RUUG, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 6, Host memory: 34254 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.xpr
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 6
+wait_on_run impl_1
+open_run impl_1
+report_drc -name drc_1 -ruledecks {default}
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+close [ open C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.srcs/sources_1/new/clk_div_1_MHz.vhd w ]
+add_files C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.srcs/sources_1/new/clk_div_1_MHz.vhd
+update_compile_order -fileset sources_1
+open_bd_design {C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.srcs/sources_1/bd/design_1/design_1.bd}
+create_bd_cell -type module -reference clk_div_1_MHz clk_div_1_MHz_0
+set_property location {3 941 408} [get_bd_cells clk_div_1_MHz_0]
+connect_bd_net [get_bd_pins clk_div_1_MHz_0/clk_104_MHz_i] [get_bd_pins clk_wiz/clk_out_104_MHz]
+disconnect_bd_net /xadc_wiz_0_eoc_out [get_bd_pins agc_centering_compos_0/clk_1_MHz_i]
+connect_bd_net [get_bd_pins clk_div_1_MHz_0/clk_1_MHz_o] [get_bd_pins agc_centering_compos_0/clk_1_MHz_i]
+save_bd_design
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -jobs 6
+open_run impl_1

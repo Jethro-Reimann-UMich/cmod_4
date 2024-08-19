@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Xilinx2023_workspace/vivado_workspace/cmod_4/cmod_4/cmod_4.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="2,049"></ZoomEndTime>
+      <Cursor1Time time="1,451"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="208"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="7" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="design_1_i/manchester_rs_compos_0/U0/decoded_manchester_s" type="array">
+      <obj_property name="ElementShortName">design_1_i/manchester_rs_compos_0/U0/decoded_manchester_s[2039:2016]</obj_property>
+      <obj_property name="ObjectShortName">decoded_manchester_s[2039:2016]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/manchester_rs_compos_0/U0/decryption_done_s" type="logic">
+      <obj_property name="ElementShortName">design_1_i/manchester_rs_compos_0/U0/decryption_done_s</obj_property>
+      <obj_property name="ObjectShortName">decryption_done_s</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/manchester_rs_compos_0/U0/recovered_clk_i" type="logic">
+      <obj_property name="ElementShortName">design_1_i/manchester_rs_compos_0/U0/recovered_clk_i</obj_property>
+      <obj_property name="ObjectShortName">recovered_clk_i</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/manchester_rs_compos_0/U0/recovered_data_bit_i" type="logic">
+      <obj_property name="ElementShortName">design_1_i/manchester_rs_compos_0/U0/recovered_data_bit_i</obj_property>
+      <obj_property name="ObjectShortName">recovered_data_bit_i</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/manchester_rs_compos_0/U0/rs_bus_output_target_bytes_s" type="array">
+      <obj_property name="ElementShortName">design_1_i/manchester_rs_compos_0/U0/rs_bus_output_target_bytes_s[87:64]</obj_property>
+      <obj_property name="ObjectShortName">rs_bus_output_target_bytes_s[87:64]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/manchester_rs_compos_0/U0/state_int_s" type="array">
+      <obj_property name="ElementShortName">design_1_i/manchester_rs_compos_0/U0/state_int_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">state_int_s[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/manchester_rs_compos_0/U0/data_s" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/manchester_rs_compos_0/U0/data_s[1823:1784]</obj_property>
+      <obj_property name="ObjectShortName">data_s[1823:1784]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

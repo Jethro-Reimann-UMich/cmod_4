@@ -1,0 +1,2 @@
+manchester_rs_composite_ila.vhd,vhdl,xil_defaultlib,../../../../cmod_4.gen/sources_1/ip/manchester_rs_composite_ila/sim/manchester_rs_composite_ila.vhd,incdir="../../../../cmod_4.gen/sources_1/ip/manchester_rs_composite_ila/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

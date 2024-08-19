@@ -1,0 +1,2 @@
+agc_div_gen.vhd,vhdl,xil_defaultlib,../../../../cmod_4.gen/sources_1/ip/agc_div_gen/sim/agc_div_gen.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,2 @@
+freq_err_fir_1.vhd,vhdl,xil_defaultlib,../../../../cmod_4.gen/sources_1/ip/freq_err_fir_1/sim/freq_err_fir_1.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

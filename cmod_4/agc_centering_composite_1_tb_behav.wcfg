@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="rs_decoder_sm_1_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="csv_file_reader_pkg" />
+            <top_module name="generic_components" />
+            <top_module name="generic_functions" />
+            <top_module name="generic_types" />
+            <top_module name="glbl" />
+            <top_module name="rs_components" />
+            <top_module name="rs_constants" />
+            <top_module name="rs_decoder_sm_1_tb" />
+            <top_module name="rs_functions" />
+            <top_module name="rs_types" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1,070.790180 us"></ZoomStartTime>
+      <ZoomEndTime time="1,231.584167 us"></ZoomEndTime>
+      <Cursor1Time time="1,204.785169 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="243"></NameColumnWidth>
+      <ValueColumnWidth column_width="132"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/rs_decoder_sm_1_tb/hs_clk_i_tb" type="logic">
+      <obj_property name="ElementShortName">hs_clk_i_tb</obj_property>
+      <obj_property name="ObjectShortName">hs_clk_i_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/rst_i_tb" type="logic">
+      <obj_property name="ElementShortName">rst_i_tb</obj_property>
+      <obj_property name="ObjectShortName">rst_i_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/start_decoder_i_tb" type="logic">
+      <obj_property name="ElementShortName">start_decoder_i_tb</obj_property>
+      <obj_property name="ObjectShortName">start_decoder_i_tb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/data_bus_o_tb" type="array">
+      <obj_property name="ElementShortName">data_bus_o_tb[1111:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bus_o_tb[1111:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/data_in_stimulus" type="array">
+      <obj_property name="ElementShortName">data_in_stimulus[0:16385][1:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in_stimulus[0:16385][1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/stimulus_count_s" type="other">
+      <obj_property name="ElementShortName">stimulus_count_s</obj_property>
+      <obj_property name="ObjectShortName">stimulus_count_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/data_bus_i_tb" type="array">
+      <obj_property name="ElementShortName">data_bus_i_tb[2039:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bus_i_tb[2039:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/state_s" type="other">
+      <obj_property name="ElementShortName">state_s</obj_property>
+      <obj_property name="ObjectShortName">state_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/i_end_codeword_s" type="logic">
+      <obj_property name="ElementShortName">i_end_codeword_s</obj_property>
+      <obj_property name="ObjectShortName">i_end_codeword_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/i_start_codeword_s" type="logic">
+      <obj_property name="ElementShortName">i_start_codeword_s</obj_property>
+      <obj_property name="ObjectShortName">i_start_codeword_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/i_valid_s" type="logic">
+      <obj_property name="ElementShortName">i_valid_s</obj_property>
+      <obj_property name="ObjectShortName">i_valid_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/i_symbol_s" type="array">
+      <obj_property name="ElementShortName">i_symbol_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_symbol_s[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/o_end_codeword_s" type="logic">
+      <obj_property name="ElementShortName">o_end_codeword_s</obj_property>
+      <obj_property name="ObjectShortName">o_end_codeword_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/o_start_codeword_s" type="logic">
+      <obj_property name="ElementShortName">o_start_codeword_s</obj_property>
+      <obj_property name="ObjectShortName">o_start_codeword_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/o_valid_s" type="logic">
+      <obj_property name="ElementShortName">o_valid_s</obj_property>
+      <obj_property name="ObjectShortName">o_valid_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/o_error_s" type="logic">
+      <obj_property name="ElementShortName">o_error_s</obj_property>
+      <obj_property name="ObjectShortName">o_error_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/o_symbol_s" type="array">
+      <obj_property name="ElementShortName">o_symbol_s[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_symbol_s[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/data_bus_i_buff_s" type="array">
+      <obj_property name="ElementShortName">data_bus_i_buff_s[2039:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bus_i_buff_s[2039:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/writing_count_s" type="other">
+      <obj_property name="ElementShortName">writing_count_s</obj_property>
+      <obj_property name="ObjectShortName">writing_count_s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/output_buff_s" type="array">
+      <obj_property name="ElementShortName">output_buff_s[2047:0]</obj_property>
+      <obj_property name="ObjectShortName">output_buff_s[2047:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/rs_decoder_sm_1_tb/UUT_rs_decoder_sm_1/data_bus_o" type="array">
+      <obj_property name="ElementShortName">data_bus_o[1111:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bus_o[1111:0]</obj_property>
+   </wvobject>
+</wave_config>

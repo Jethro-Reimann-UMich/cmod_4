@@ -1,0 +1,2 @@
+agc_ila_2.vhd,vhdl,xil_defaultlib,../../../../cmod_4.gen/sources_1/ip/agc_ila_2/sim/agc_ila_2.vhd,incdir="../../../../cmod_4.gen/sources_1/ip/agc_ila_2/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v
