@@ -1,0 +1,1 @@
+Initial Commit of ImpLi-Fi Receiver FPGA Vivado 2023.2 Project. Check the 'ImpLiFi_FPGA_Receiver_Documentation_3_12_24.pdf' for documentation. It's only partially done but covers all the main points up to the Reed-Solomon Error Correction Topology. 
